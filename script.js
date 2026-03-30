@@ -19,3 +19,21 @@ function toggleTheme() {
 }
 
 themeToggleBtn.addEventListener('click', toggleTheme);
+
+// === UKRYWANIE SEKCJI PROJEKTY ===
+const toggleProjektyBtn = document.getElementById('toggle-projekty');
+const projektyLista = document.getElementById('projekty-lista');
+
+function toggleProjekty() {
+    const isHidden = projektyLista.style.display === 'none';
+
+    if (isHidden) {
+        projektyLista.style.display = 'block';
+        toggleProjektyBtn.textContent = 'Ukryj';
+    } else {
+        projektyLista.style.display = 'none';
+        toggleProjektyBtn.textContent = 'Pokaż';
+    }
+}
+
+toggleProjektyBtn.addEventListener('click', toggleProjekty);
