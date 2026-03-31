@@ -24,7 +24,8 @@ Projekt ewoluuje od statycznego dokumentu HTML do dynamicznej aplikacji zintegro
 - **Frontend:** HTML5, CSS3 (Custom Properties, Flexbox), JavaScript (ES6+)
 - **Dane:** JSON, Fetch API
 - **Trwałość danych:** Local Storage
-- **Backend:** (Planowane: Firebase / Supabase)
+- **Backend (planowane):** Formspree API (BaaS - Backend-as-a-Service)
+- **Komunikacja:** Fetch API (metoda POST, JSON)
 - **Narzędzia:** Git, GitHub Pages
 
 ---
