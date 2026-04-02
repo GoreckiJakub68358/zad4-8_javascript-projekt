@@ -1,8 +1,8 @@
 # 📄 Interaktywne CV – Projekt Semestralny
 
-> **Przedmiot:** Projektowanie multimedialnych stron internetowych
-> **Uczelnia:** Akademia Finansów i Biznesu Vistula
-> **Autor:** Jakub Górecki (Nr indeksu: 68358)
+> - **Przedmiot:** Projektowanie multimedialnych stron internetowych
+> - **Uczelnia:** Akademia Finansów i Biznesu Vistula
+> - **Autor:** Jakub Górecki (Nr indeksu: 68358)
 
 ## 🔗 Linki
 
