@@ -6,7 +6,7 @@
 
 ## 🔗 Linki
 
-- 📁 Repozytorium: [https://github.com/GoreckiJakub68358/zad4-8_javascript_projekt](https://github.com/GoreckiJakub68358/zad4-8_javascript_projekt)
+- 📁 Repozytorium: [https://github.com/GoreckiJakub68358/zad4-8_javascript-projekt](https://github.com/GoreckiJakub68358/zad4-8_javascript-projekt)
 - 🌐 GitHub Pages: [https://goreckijakub68358.github.io/zad4-8_javascript-projekt/](https://goreckijakub68358.github.io/zad4-8_javascript-projekt/)
 
 ---
