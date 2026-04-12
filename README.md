@@ -60,7 +60,7 @@ Obecna wersja projektu (Zadanie 4) oferuje następujące interakcje:
 ├── red.css          # Arkusz stylów - motyw czerwony (domyślny)
 ├── green.css        # Arkusz stylów - motyw zielony
 ├── moje-zdjecie.jpg # Zasoby graficzne
-└── README.md       # Dokumentacja projektu
+└── README.md        # Dokumentacja projektu
 ```
 
 ## 📌 Zasady oceniania i standardy
