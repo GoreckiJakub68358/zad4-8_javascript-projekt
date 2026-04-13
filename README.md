@@ -17,6 +17,8 @@ Niniejsze repozytorium zawiera główną, przyrostowo rozwijaną wersję projekt
 
 Projekt ewoluuje od statycznego dokumentu HTML do dynamicznej aplikacji zintegrowanej z zewnętrznym serwerem.
 
+---
+
 ## 🛠️ Stos technologiczny (Tech Stack)
 
 - **Frontend:** HTML5, CSS3 (Custom Properties, Flexbox), JavaScript (ES6+)
@@ -35,19 +37,18 @@ Projekt ewoluuje od statycznego dokumentu HTML do dynamicznej aplikacji zintegro
 | **Zadanie 1-2** | ✅ | Struktura HTML5 i stylowanie CSS3 (RWD). |
 | **Zadanie 3** | ✅ | Implementacja dwóch motywów kolorystycznych (`red` / `green`). |
 | **Zadanie 4** | ✅ | **Interakcja JS:** Dynamiczna zmiana motywu i ukrywanie sekcji. |
-| **Zadanie 5** | ⏳ | Formularz kontaktowy z pełną walidacją po stronie klienta. |
+| **Zadanie 5** | ✅ | Formularz kontaktowy z pełną walidacją po stronie klienta. |
 | **Zadanie 6** | ⏳ | Dynamiczne budowanie treści z pliku JSON (Fetch API). |
 | **Zadanie 7** | ⏳ | Obsługa Local Storage (zapisywanie preferencji/notatek). |
 | **Zadanie 8** | ⏳ | Integracja z Backendem (zapis danych na serwerze). |
 
 ---
 
-## 🎮 Aktualne funkcjonalności (v4.0)
+## 🎮 Aktualne funkcjonalności (v5.0)
 
-Obecna wersja projektu (Zadanie 4) oferuje następujące interakcje:
-1.  **Dynamic Theme Switcher:** Przycisk w nagłówku pozwala na natychmiastową zmianę motywu wizualnego bez przeładowania strony.
-2.  **Section Toggle:** Możliwość zwijania i rozwijania sekcji "Projekty" w celu poprawy czytelności (UX).
-3.  **Advanced CSS Effects:** Wykorzystanie `transform: scale` oraz `translateY` dla płynnych animacji typu hover.
+Obecna wersja projektu (Zadanie 5) oferuje następujące interakcje:
+
+1.  **Interactive Form Validation:** Walidacja formularza kontaktowego w czasie rzeczywistym – weryfikacja pól wymaganych, formatu e-mail oraz alfabetyczności imienia i nazwiska z czytelnymi komunikatami błędów.
 
 ---
 
@@ -62,6 +63,8 @@ Obecna wersja projektu (Zadanie 4) oferuje następujące interakcje:
 ├── moje-zdjecie.jpg # Zasoby graficzne
 └── README.md        # Dokumentacja projektu
 ```
+
+---
 
 ## 📌 Zasady oceniania i standardy
 
