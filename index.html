@@ -94,6 +94,39 @@
           </li>
         </ul>
       </section>
+      <section id="kontakt-formularz" class="container">
+        <h2>Napisz do mnie</h2>
+        <form id="contact-form" novalidate>
+            <div class="form-group">
+                <label for="first-name">Imię:</label>
+                <input type="text" id="first-name" name="first-name" placeholder="Wpisz imię...">
+                <span class="error-message" id="first-name-error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="last-name">Nazwisko:</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Wpisz nazwisko...">
+                <span class="error-message" id="last-name-error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Podaj adres e-mail...">
+                <span class="error-message" id="email-error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Wiadomość:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Twoja wiadomość..."></textarea>
+                <span class="error-message" id="message-error"></span>
+            </div>
+
+            <button type="submit" id="submit-btn">Wyślij wiadomość</button>
+            <p id="form-success" style="display: none; color: #2e8b57; font-weight: bold; margin-top: 10px;">
+                Formularz został poprawnie wypełniony! (Symulacja wysyłki)
+            </p>
+        </form>
+      </section>
     </main>
     <footer>
       <p>&copy; 2026 Jakub Górecki. Strona stworzona na potrzeby zadania zaliczeniowego.</p>
