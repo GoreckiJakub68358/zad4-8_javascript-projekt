@@ -1,10 +1,16 @@
+
+/* Reset wszystkich elementów */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 /* 1. Zmiana kroju pisma na inny niż domyślny (wymaganie techniczne) */
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif, Helvetica, sans-serif, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #f0f4f0; /* Delikatne tło pasujące do zieleni */
-    
+    background-color: #faebeb;
+
     /* 2. Ustawienie marginesów i odstępów dla body (wymaganie techniczne) */
     margin: 0;
     padding: 40px 20px;
@@ -13,14 +19,13 @@ body {
     align-items: center;
 }
 
-/* 3. Ustawienie koloru przewodniego w odcieniu zieleni (wymaganie techniczne) */
-/* Wybrałem kolor SeaGreen (#2e8b57) */
+/* 3. Ustawienie koloru przewodniego w odcieniu czerwieni (wymaganie techniczne) */
+/* Wybrałem kolor Crimson Red (#c0392b) */
 header h1, h2, h3 {
-    color: #2e8b57;
+    color: #c0392b;
 }
 
 header {
-    font-weight: 700;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -28,21 +33,22 @@ header {
 #theme-toggle {
     padding: 8px 10px;
     background-color: #fff;
-    border: 1px solid #2e8b57;
+    border: 1px solid #c0392b;
     border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     cursor: pointer;
     transition: box-shadow 0.3s ease;
 }
 
 #theme-toggle:hover {
-    box-shadow: 0 0 20px rgba(46, 139, 87, 0.7);
+    box-shadow: 0 0 20px rgb(192, 57, 43);
 }
 
 header img {
     width: 150px;
     height: 150px;
-    border-radius: 25%;
-    border: 4px solid #2e8b57; /* Zielone obramowanie zdjęcia */
+    border-radius: 50%;
+    border: 4px solid #c0392b;
     object-fit: cover;
     margin-bottom: 10px;
 }
@@ -52,16 +58,11 @@ header img {
     background-color: #ffffff;
     width: 100%;
     max-width: 800px;
-    margin-bottom: 20px; /* Odstępy między sekcjami */
-    padding: 25px;       /* Wewnętrzne odstępy (padding) */
-    border: 3px solid #74ce9b; /* Zielony akcent z boku */
+    margin-bottom: 20px;
+    padding: 25px;
+    border-left: 5px solid #c0392b;
     border-radius: 5px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    transition: box-shadow 0.3s ease;
-}
-
-.container:hover {
-    box-shadow: 0 0 20px rgba(46, 139, 87, 0.7);
 }
 
 h2 {
@@ -73,28 +74,28 @@ h2 {
 
 /* Stylowanie linków */
 a {
-    color: #2e8b57;
+    color: #c0392b;
     text-decoration: none;
     font-weight: bold;
 }
 
 a:hover {
     text-decoration: underline;
-    color: #1e5d3a;
+    color: #c0392b;
 }
 
 .contact-links a {
     margin-right: 15px;
-    background-color: #2e8b57;
+    background-color: #c0392b;
     color: white;
     padding: 5px 15px;
-    border-radius: 10px;
+    border-radius: 20px;
     font-size: 0.9em;
     transition: all 0.3s ease;
 }
 
 .contact-links a:hover {
-    background-color: #1e5d3a;
+    background-color: #992f23;
     text-decoration: none;
 }
 
@@ -107,18 +108,22 @@ li {
     list-style: none;
 }
 
+li:hover {
+    background-color: #fee1de;
+}
 
 .section-element {
     margin-bottom: 15px;
+    background-color: #fff;
+    border: 2px solid #c0392b;
     border-radius: 10px;
     padding: 10px 15px;
-    background-color: #fff;
-    transition: transform 0.3s ease, background-color 0.3s ease; /* Precyzyjne transition */
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .section-element:hover {
-    transform: translateY(-5px); /* Stała wartość w pikselach dla płynności */
-    background-color: #d3edde;
+    transform: scale(1.03);
+    background-color: #fee1de;
 }
 
 /* Przycisk ukrywania sekcji */
@@ -126,73 +131,74 @@ li {
     font-size: 0.7em;
     padding: 3px 10px;
     margin-left: 10px;
-    background-color: #2e8b57;
+    background-color: #c0392b;
     color: white;
     border: none;
-    border-radius: 10px;
+    border-radius: 20px;
     cursor: pointer;
     vertical-align: middle;
     transition: background-color 0.3s ease;
 }
 
 #toggle-projekty:hover {
-    background-color: #1e5d3a;
+    background-color: #992f23;
 }
 
 /* Formularz kontaktowy */
-.form-group { 
-    margin-bottom: 15px; 
-    text-align: left; 
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
 }
 
-label { 
-    display: block; 
-    font-weight: bold; 
-    margin-bottom: 5px; 
-    color: #2e8b57; 
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #c0392b;
 }
 
-input, 
+input,
 textarea {
-    width: 100%; 
-    padding: 10px; border: 
-    1px solid #ccc; 
-    border-radius: 5px; 
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     box-sizing: border-box;
 }
 
-input:focus, 
-textarea:focus { 
-    border-color: #2e8b57; 
-    outline: none; 
+input:focus,
+textarea:focus {
+    border-color: #c0392b;
+    outline: none;
 }
 
-.error-message { 
-    color: #2e8b57; 
-    font-size: 0.85em; 
-    display: block; 
-    margin-top: 5px; 
-    min-height: 1em; 
+.error-message {
+    color: #c0392b;
+    font-size: 0.85em;
+    display: block;
+    margin-top: 5px;
+    min-height: 1em;
 }
 
 #submit-btn {
-    background-color: #2e8b57; 
-    color: white; 
-    border: none; 
+    background-color: #c0392b;
+    color: white;
+    border: none;
     padding: 10px 20px;
-    border-radius: 5px; 
-    cursor: pointer; 
-    font-weight: bold; 
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
     transition: background 0.3s;
 }
 
-#submit-btn:hover { 
-    background-color: #1e5d3a; 
+#submit-btn:hover {
+    background-color: #992f23;
 }
 
+/* Stopka */
 footer {
     margin-top: 20px;
     font-size: 0.8em;
-    color: #2e8b57;
+    color: #c0392b;
     text-align: center;
 }
