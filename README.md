@@ -38,17 +38,17 @@ Projekt ewoluuje od statycznego dokumentu HTML do dynamicznej aplikacji zintegro
 | **Zadanie 3** | ✅ | Implementacja dwóch motywów kolorystycznych (`red` / `green`). |
 | **Zadanie 4** | ✅ | **Interakcja JS:** Dynamiczna zmiana motywu i ukrywanie sekcji. |
 | **Zadanie 5** | ✅ | Formularz kontaktowy z pełną walidacją po stronie klienta. |
-| **Zadanie 6** | ⏳ | Dynamiczne budowanie treści z pliku JSON (Fetch API). |
+| **Zadanie 6** | ✅ | Dynamiczne budowanie treści z pliku JSON (Fetch API). |
 | **Zadanie 7** | ⏳ | Obsługa Local Storage (zapisywanie preferencji/notatek). |
 | **Zadanie 8** | ⏳ | Integracja z Backendem (zapis danych na serwerze). |
 
 ---
 
-## 🎮 Aktualne funkcjonalności (v5.0)
+## 🎮 Aktualne funkcjonalności (v6.0)
 
-Obecna wersja projektu (Zadanie 5) oferuje następujące interakcje:
+Obecna wersja projektu (Zadanie 6) oferuje następujące interakcje:
 
-1.  **Interactive Form Validation:** Walidacja formularza kontaktowego w czasie rzeczywistym – weryfikacja pól wymaganych, formatu e-mail oraz alfabetyczności imienia i nazwiska z czytelnymi komunikatami błędów.
+1.  **Dynamiczne pobieranie danych (JSON):** Integracja z API (Fetch) w celu dynamicznego renderowania elementów listy kompetencji i artykułów doświadczenia zawodowego na podstawie struktury JSON.
 
 ---
 
@@ -58,6 +58,7 @@ Obecna wersja projektu (Zadanie 5) oferuje następujące interakcje:
 /
 ├── index.html       # Główny plik strukturalny
 ├── script.js        # Logika aplikacji (JavaScript)
+├── data.json        # Dane w formacie JSON (Zadanie 6)
 ├── red.css          # Arkusz stylów - motyw czerwony (domyślny)
 ├── green.css        # Arkusz stylów - motyw zielony
 ├── moje-zdjecie.jpg # Zasoby graficzne
