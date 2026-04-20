@@ -101,3 +101,45 @@ contactForm.addEventListener('submit', function(event) {
         console.log('Formularz wysłany pomyślnie!');
     }
 });
+
+// === ZADANIE 6 - DANE Z JSON (FETCH API) ===
+
+async function loadData() {
+    try {
+        const response = await fetch('data.json');
+        if (!response.ok) throw new Error('Błąd podczas pobierania danych JSON');
+        
+        const data = await response.json();
+
+        // 1. Generowanie listy umiejętności
+        const umiejetnosciLista = document.getElementById('umiejetnosci-lista');
+        umiejetnosciLista.innerHTML = ''; // Czyścimy "Ładowanie danych..."
+
+        data.umiejetnosci.forEach(skill => {
+            const li = document.createElement('li');
+            li.className = 'section-element';
+            li.textContent = skill;
+            umiejetnosciLista.appendChild(li);
+        });
+
+        // 2. Generowanie listy projektów
+        const projektyLista = document.getElementById('projekty-lista');
+        projektyLista.innerHTML = ''; // Czyścimy "Ładowanie danych..."
+
+        data.projekty.forEach(proj => {
+            const li = document.createElement('li');
+            li.className = 'section-element';
+            li.innerHTML = `<strong>${proj.tytul}:</strong><br>${proj.opis}`;
+            projektyLista.appendChild(li);
+        });
+
+        console.log('Dane z JSON załadowane pomyślnie dla indeksu:', data.nr_indeksu);
+
+    } catch (error) {
+        console.error('Błąd:', error);
+        document.getElementById('umiejetnosci-lista').innerHTML = '<li>Nie udało się załadować danych.</li>';
+    }
+}
+
+// Wywołujemy funkcję przy starcie strony
+loadData();
