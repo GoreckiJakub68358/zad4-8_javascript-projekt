@@ -1,3 +1,8 @@
+/* Reset wszystkich elementów */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 /* 1. Zmiana kroju pisma na inny niż domyślny (wymaganie techniczne) */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
