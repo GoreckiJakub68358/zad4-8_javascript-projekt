@@ -91,7 +91,23 @@ contactForm.addEventListener('submit', function(event) {
 
     // === ZADANIE 8 - Wysyłka do Formspree (tylko jeśli walidacja OK) ===
     if (isValid) {
+        const formData = new FormData(contactForm);
         const endpoint = "https://formspree.io/f/mgopkqer";
+
+        const submitBtn = document.getElementById('submit-btn');
+        const originalBtnText = submitBtn.textContent;
+        submitBtn.textContent = "Wysyłanie...";
+        submitBtn.disabled = true;
+
+        fetch(endpoint, {
+            method: 'POST',
+            body: formData,
+            headers: { 'Accept': 'application/json' }
+        })
+        .finally(() => {
+            submitBtn.textContent = originalBtnText;
+            submitBtn.disabled = false;
+        });
     }
 });
 
