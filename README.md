@@ -24,7 +24,7 @@ Projekt ewoluuje od statycznego dokumentu HTML do dynamicznej aplikacji zintegro
 - **Frontend:** HTML5, CSS3 (Custom Properties, Flexbox), JavaScript (ES6+)
 - **Dane:** JSON, Fetch API
 - **Trwałość danych:** Local Storage
-- **Backend (planowane):** Formspree API (BaaS - Backend-as-a-Service)
+- **Backend:** Formspree API (BaaS - Backend-as-a-Service)
 - **Komunikacja:** Fetch API (metoda POST, JSON)
 - **Narzędzia:** Git, GitHub Pages
 
@@ -39,17 +39,18 @@ Projekt ewoluuje od statycznego dokumentu HTML do dynamicznej aplikacji zintegro
 | **Zadanie 4** | ✅ | **Interakcja JS:** Dynamiczna zmiana motywu i ukrywanie sekcji. |
 | **Zadanie 5** | ✅ | Formularz kontaktowy z pełną walidacją po stronie klienta. |
 | **Zadanie 6** | ✅ | Dynamiczne budowanie treści z pliku JSON (Fetch API). |
-| **Zadanie 7** | ⏳ | Obsługa Local Storage (zapisywanie preferencji/notatek). |
-| **Zadanie 8** | ⏳ | Integracja z Backendem (zapis danych na serwerze). |
+| **Zadanie 7** | ✅ | Obsługa Local Storage (zapisywanie preferencji/notatek). |
+| **Zadanie 8** | ✅ | Integracja z Backendem (zapis danych na serwerze). |
 
 ---
 
-## 🎮 Aktualne funkcjonalności (v6.0)
+## 🎮 Aktualne funkcjonalności (v7.0 - v8.0)
 
-Obecna wersja projektu (Zadanie 6) oferuje następujące interakcje:
+Obecna wersja projektu (Zadanie 7-8) oferuje następujące interakcje:
 
-1.  **Dynamiczne pobieranie danych (JSON):** Integracja z API (Fetch) w celu dynamicznego renderowania elementów listy kompetencji i artykułów doświadczenia zawodowego na podstawie struktury JSON.
+1.  **Notatki z localStorage:** Dodanie sekcji z notatkami w HTML i CSS oraz implementacja zapisu, odczytu i usuwania notatek z `localStorage` w JavaScript.
 
+2.  **Wysyłka danych do serwera:** Konfiguracja backendu do wysyłania danych z formularza na serwer (konfiguracja endpointu backendu, impelementacja metodą `POST` przez `fetch`, dodanie potwierdzenia wysyłki danych).
 ---
 
 ## 📂 Struktura projektu
