@@ -6,8 +6,9 @@
 
 ## 🔗 Linki
 
-- 📁 Repozytorium: [https://github.com/GoreckiJakub68358/zad4-8_javascript-projekt](https://github.com/GoreckiJakub68358/zad4-8_javascript-projekt)
-- 🌐 GitHub Pages: [https://goreckijakub68358.github.io/zad4-8_javascript-projekt/](https://goreckijakub68358.github.io/zad4-8_javascript-projekt/)
+- 📁 **Repozytorium:** [https://github.com/GoreckiJakub68358/zad4-8_javascript-projekt](https://github.com/GoreckiJakub68358/zad4-8_javascript-projekt)
+- 🌐 **GitHub Pages:** [https://goreckijakub68358.github.io/zad4-8_javascript-projekt/](https://goreckijakub68358.github.io/zad4-8_javascript-projekt/)
+- 🟥 **Formspree API (test backendu):** [https://formspree.io/forms/mgopkqer/submissions](https://formspree.io/forms/mgopkqer/submissions)
 
 ---
 
@@ -24,7 +25,7 @@ Projekt ewoluuje od statycznego dokumentu HTML do dynamicznej aplikacji zintegro
 - **Frontend:** HTML5, CSS3 (Custom Properties, Flexbox), JavaScript (ES6+)
 - **Dane:** JSON, Fetch API
 - **Trwałość danych:** Local Storage
-- **Backend:** Formspree API (BaaS - Backend-as-a-Service)
+- **Backend:** [Formspree API](https://formspree.io/forms/mgopkqer/submissions) (BaaS - Backend-as-a-Service)
 - **Komunikacja:** Fetch API (metoda POST, JSON)
 - **Narzędzia:** Git, GitHub Pages
 
