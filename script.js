@@ -143,3 +143,45 @@ async function loadData() {
 
 // Wywołujemy funkcję przy starcie strony
 loadData();
+
+// === ZADANIE 7 - LOCAL STORAGE (NOTATKI) ===
+
+const noteInput = document.getElementById('note-input');
+const addNoteBtn = document.getElementById('add-note-btn');
+const notesList = document.getElementById('notes-list');
+
+// 1. Funkcja wyświetlająca notatki na stronie
+function displayNotes() {
+    const notes = JSON.parse(localStorage.getItem('userNotes')) || [];
+    notesList.innerHTML = ''; // Czyścimy listę przed ponownym renderowaniem
+
+    notes.forEach((note, index) => {
+        const li = document.createElement('li');
+        li.className = 'section-element';
+        li.style.display = 'flex';
+        li.style.justifyContent = 'space-between';
+        li.style.alignItems = 'center';
+        
+        li.innerHTML = `
+            <span>${note}</span>
+            <button 
+                onclick="deleteNote(${index})"
+                class="delete-note-btn">
+                Usuń
+            </button>
+        `;
+        notesList.appendChild(li);
+    });
+}
+
+// 2. Funkcja dodająca nową notatkę
+addNoteBtn.addEventListener('click', () => {
+    const newNote = noteInput.value.trim();
+    if (newNote) {
+        const notes = JSON.parse(localStorage.getItem('userNotes')) || [];
+        notes.push(newNote);
+        localStorage.setItem('userNotes', JSON.stringify(notes));
+        noteInput.value = ''; // Czyścimy input
+        displayNotes(); // Odświeżamy widok
+    }
+});
