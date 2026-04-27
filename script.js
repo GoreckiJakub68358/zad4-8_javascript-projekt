@@ -185,3 +185,14 @@ addNoteBtn.addEventListener('click', () => {
         displayNotes(); // Odświeżamy widok
     }
 });
+
+// 3. Funkcja usuwająca notatkę
+window.deleteNote = function(index) {
+    const notes = JSON.parse(localStorage.getItem('userNotes')) || [];
+    notes.splice(index, 1); // Usuwamy element o danym indeksie
+    localStorage.setItem('userNotes', JSON.stringify(notes));
+    displayNotes(); // Odświeżamy widok
+};
+
+// 4. Ładujemy notatki przy starcie strony
+displayNotes();
