@@ -1,15 +1,10 @@
-/* Reset wszystkich elementów */
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-
 /* 1. Zmiana kroju pisma na inny niż domyślny (wymaganie techniczne) */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #faebeb;
-
+    background-color: #faebeb; /* Delikatne tło pasujące do czerwieni */
+    
     /* 2. Ustawienie marginesów i odstępów dla body (wymaganie techniczne) */
     margin: 0;
     padding: 40px 20px;
@@ -18,7 +13,7 @@ body {
     align-items: center;
 }
 
-/* 3. Ustawienie koloru przewodniego w odcieniu czerwieni (wymaganie techniczne) */
+/* 3. Ustawienie koloru przewodniego w odcieniu zieleni (wymaganie techniczne) */
 /* Wybrałem kolor Crimson Red (#c0392b) */
 header h1, h2, h3 {
     color: #c0392b;
@@ -43,11 +38,12 @@ header {
     box-shadow: 0 0 20px rgb(192, 57, 43);
 }
 
+
 header img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 4px solid #c0392b;
+    border: 4px solid #c0392b; /* Czerwone obramowanie zdjęcia */
     object-fit: cover;
     margin-bottom: 10px;
 }
@@ -57,9 +53,9 @@ header img {
     background-color: #ffffff;
     width: 100%;
     max-width: 800px;
-    margin-bottom: 20px;
-    padding: 25px;
-    border-left: 5px solid #c0392b;
+    margin-bottom: 20px; /* Odstępy między sekcjami */
+    padding: 25px;       /* Wewnętrzne odstępy (padding) */
+    border-left: 5px solid #c0392b; /* Czerwony akcent z boku */
     border-radius: 5px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
@@ -111,6 +107,10 @@ li:hover {
     background-color: #fee1de;
 }
 
+textarea {
+    resize: vertical;
+}
+
 .section-element {
     margin-bottom: 15px;
     background-color: #fff;
@@ -121,7 +121,7 @@ li:hover {
 }
 
 .section-element:hover {
-    transform: scale(1.03);
+    transform: scale(1.03); /* Płynne powiększenie */
     background-color: #fee1de;
 }
 
@@ -139,61 +139,79 @@ li:hover {
     transition: background-color 0.3s ease;
 }
 
+/* Przycisk do dodawania notatki */
+#add-note-btn {
+    background-color: #c0392b;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.delete-note-btn {
+    background: #c0392b; 
+    color: white; 
+    border: none; 
+    border-radius: 15px; 
+    padding: 5px 10px; 
+    cursor: pointer;
+}
+
 #toggle-projekty:hover {
     background-color: #992f23;
 }
 
 /* Formularz kontaktowy */
-.form-group {
-    margin-bottom: 15px;
-    text-align: left;
+.form-group { 
+    margin-bottom: 15px; 
+    text-align: left; 
 }
 
-label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #c0392b;
+label { 
+    display: block; 
+    font-weight: bold; 
+    margin-bottom: 5px; 
+    color: #c0392b; 
 }
 
-textarea { resize: vertical; }
-
-input,
+input, 
 textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    width: 100%; 
+    padding: 10px; border: 
+    1px solid #ccc; 
+    border-radius: 5px; 
     box-sizing: border-box;
 }
 
-input:focus,
-textarea:focus {
-    border-color: #c0392b;
-    outline: none;
+input:focus, 
+textarea:focus { 
+    border-color: #c0392b; 
+    outline: none; 
 }
 
-.error-message {
-    color: #c0392b;
-    font-size: 0.85em;
-    display: block;
-    margin-top: 5px;
-    min-height: 1em;
+.error-message { 
+    color: #c0392b; 
+    font-size: 0.85em; 
+    display: block; 
+    margin-top: 5px; 
+    min-height: 1em; 
 }
 
 #submit-btn {
-    background-color: #c0392b;
-    color: white;
-    border: none;
+    background-color: #c0392b; 
+    color: white; 
+    border: none; 
     padding: 10px 20px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-weight: bold;
+    border-radius: 20px; 
+    cursor: pointer; 
+    font-weight: bold; 
     transition: background 0.3s;
 }
 
-#submit-btn:hover {
-    background-color: #992f23;
+#submit-btn:hover { 
+    background-color: #992f23; 
 }
 
 /* Stopka */
