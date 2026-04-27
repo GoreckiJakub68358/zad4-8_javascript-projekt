@@ -104,6 +104,21 @@ contactForm.addEventListener('submit', function(event) {
             body: formData,
             headers: { 'Accept': 'application/json' }
         })
+        .then(response => {
+            if (response.ok) {
+                formSuccess.style.display = 'block';
+                formSuccess.textContent = "✅ Wiadomość została wysłana do backendu (Formspree)!";
+                formSuccess.style.color = "#2e8b57";
+                contactForm.reset();
+            } else {
+                throw new Error('Błąd serwera');
+            }
+        })
+        .catch(error => {
+            formSuccess.style.display = 'block';
+            formSuccess.textContent = "❌ Wystąpił błąd podczas wysyłki do serwera.";
+            formSuccess.style.color = "#c0392b";
+        })
         .finally(() => {
             submitBtn.textContent = originalBtnText;
             submitBtn.disabled = false;
