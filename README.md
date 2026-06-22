@@ -2,7 +2,7 @@
 
 > - **Przedmiot:** Projektowanie multimedialnych stron internetowych
 > - **Uczelnia:** Akademia Finansów i Biznesu Vistula
-> - **Autor:** Jakub Górecki (Nr indeksu: 68358)
+> - **Autor:** Jakub Górecki
 
 ## 🔗 Linki
 
@@ -45,15 +45,6 @@ Projekt ewoluuje od statycznego dokumentu HTML do dynamicznej aplikacji zintegro
 
 ---
 
-## 🎮 Aktualne funkcjonalności (v7.0 - v8.0)
-
-Obecna wersja projektu (Zadanie 7-8) oferuje następujące interakcje:
-
-1.  **Notatki z localStorage:** Dodanie sekcji z notatkami w HTML i CSS oraz implementacja zapisu, odczytu i usuwania notatek z `localStorage` w JavaScript.
-
-2.  **Wysyłka danych do serwera:** Konfiguracja backendu do wysyłania danych z formularza na serwer (konfiguracja endpointu backendu, impelementacja metodą `POST` przez `fetch`, dodanie potwierdzenia wysyłki danych).
----
-
 ## 📂 Struktura projektu
 
 ```text
@@ -71,8 +62,8 @@ Obecna wersja projektu (Zadanie 7-8) oferuje następujące interakcje:
 
 ## 📌 Zasady oceniania i standardy
 
-- **Numer indeksu (68358):** Obecny w kodzie źródłowym, na stronie oraz w historii commitów.
+- **Numer indeksu:** Obecny w kodzie źródłowym, na stronie oraz w historii commitów.
 - **Clean Code:** Kod sformatowany, semantyczny i wolny od błędów w konsoli.
-- **Git Flow:** Regularne commity opisujące konkretne zmiany zgodnie ze schematem: `[68358] zadX: opis`.
+- **Git Flow:** Regularne commity opisujące konkretne zmiany zgodnie ze schematem.
 
 ---
